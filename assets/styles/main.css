@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding:0;
+  font-family: 'Open Sans', sans-serif;
+}
+.profile_badge {
+  background: url(http://www.gravatar.com/avatar/49f02c2d35c0d92120d6298dccba0ac7?s=250);
+  background-position: center right;
+  background-repeat:  no-repeat;
+	background-size:  cover;
+	background-color: #e3e3e3;
+  border-radius: 100%;
+  border: 8px solid white;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  text-shadow: 0px 0px 5px rgba(10, 10, 10, 0.5);
+}
+
+.wrapper {
+  height: 60vh;
+  width: 100%;
+  background: rga(0, 0, 0, 0.6);
+  color: white;
+  background-image: url(../images/DSC_0464-Edit.jpg);
+	background-position: center center;
+  background-repeat:  no-repeat;
+	background-size:  cover;
+	background-color: #e3e3e3;
+}
+
+.content {
+  min-height:100vh;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 900;
+  text-align:center;
+  color: #fafafa;
+  text-shadow: 0px 0px 5px rgba(10, 10, 10, 0.5);
+}
+.subtitle {
+  margin-top: 40px;
+  font-size:1.5em;
+  text-align:center;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px rgba(10, 10, 10, 0.5);
+}
+
+.content-title {
+  font-size: 2em;
+  font-weight: 600;
+  height: 60px;
+  margin-left: 2.5%;
+  width: 95%;
+}
+
+p {
+  margin-left: 2.5%;
+  width: 95%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-item {
+  max-width: 50%;
+}
+
+.flex-item--top {
+  align-self: flex-start;
+}
+
+.flex-item--bottom {
+  align-self: flex-end;
+}
+.repos {
+  display: flex;
+}
+.repo {
+  background: #fafafa;
+  min-height: 75px;
+  width: 300px;
+  margin-left: 0px;
+  text-align:center;
+  align-self: stretch;
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.repo a {
+  padding-left: 10px;
+}
+
+.repo:hover {
+  background: #e3e3e3;
+}
+
+.repo .tab {
+  width: 10px;
+  height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.full-wide {
+  background: #222;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.full-wide .full-wide-item {
+  align-self: stretch;
+  flex-grow: 3;
+  height: 100%;
+
+}
+.full-wide .full-wide-item.website {
+  background-image: url(../images/1.png);
+	background-position: center center;
+  background-repeat:  no-repeat;
+	background-size:  cover;
+}
+.full-wide .full-wide-item.mobile {
+  background-image: url(../images/2.png);
+	background-position: center center;
+  background-repeat:  no-repeat;
+	background-size:  cover;
+}
+.full-wide .full-wide-item.api {
+  background-image: url(../images/31.png);
+	background-position: center center;
+  background-repeat:  no-repeat;
+	background-size:  cover;
+}
+
+.breaker {
+  height: 50px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 50px;
+  margin-left: 2.5%;
+  width: 95%;
+}
+.flex-center-content {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.twitter {
+  display: flex;
+  height: 100%;
+  width: 250px;
+}
+.twitter:hover {
+  background: #e3e3e3
+}
+
+.twitter .image {
+  height: 100px;
+}
+
+.twitter .url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitter .image img {
+  height: 100%;
+  width: auto;
+}
+.twitter .image-linkedin img {
+  height: 30px;
+  margin: 0 auto;
+}
