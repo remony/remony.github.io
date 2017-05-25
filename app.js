@@ -3,7 +3,7 @@ window.onload = function() {
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Software developer at NCR; Anime addict; Photography hobbyist.'
+            loading: 'Software developer at NCR; Anime addict; Photography hobbyist.'
         }
     });
     var github = new Vue({
