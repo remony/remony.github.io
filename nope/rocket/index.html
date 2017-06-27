@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="rocket.css">
+    <script src="rocket.js"></script>
+  </head>
+  <style>
+    body {
+      background: #73D2DE;
+    }
+  </style>
+  <body>
+    <div class="rocket"></div>
+    <img class="image" src=""/>
+
+    <script>
+      window.onload = function() {
+        createRocket(document.querySelector('.rocket'), 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Fighter_jet_font_awesome.svg/512px-Fighter_jet_font_awesome.svg.png');
+        downloadImageToElement('.image', 'https://68.media.tumblr.com/2dfc3369827df9b981e111d7fd8fc732/tumblr_mvemcyarmn1rslphyo1_400.gif');
+
+      }
+    </script>
+  </body>
+</html>
