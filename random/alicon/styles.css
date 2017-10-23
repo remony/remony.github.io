@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(#0E71AF, #00E9FF);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+.header, .subHeader {
+    text-align: center;
+}
+.header {
+    font-size: 2.8em;
+}
+.subheader {
+    font-size: 1.4em;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.bottom-row {
+    justify-content: space-between;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+
+.align-bottom-right {
+    justify-content: flex-end;
+}
+
+.align-bottom-left {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 200;
+}
+
+
+.align-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.align-center-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.align-bottom-center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.align-top-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
