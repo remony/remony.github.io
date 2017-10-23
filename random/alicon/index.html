@@ -1,13 +1,14 @@
 <html>
 
 <head>
+    <script src="https://unpkg.com/vue"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
     <div id="app">
-        <div class="wrapper">
+        <div class="wrapper" v-if="loaded">
                 <div class="align-top">Facebook | Twitter | EventBrite | Stuff
                 </div>
                 <div class="align-center-center column">
@@ -34,7 +35,7 @@
     </div>
 
 </body>
-<script src="https://unpkg.com/vue"></script>
+
 <script src="main.js"></script>
 
 </html>
