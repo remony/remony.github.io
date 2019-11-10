@@ -22,7 +22,7 @@ var app = new Vue({
                 {
                     title: 'Github',
                     icon: 'fab fa-github',
-                    url: 'https://github.com/remony/'
+                    url: 'https://github.com/stuartjdouglas/'
                 }
             ]
         },
