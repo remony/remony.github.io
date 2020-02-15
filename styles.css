@@ -1,0 +1,131 @@
+body {
+    background-color: #afe6e1;
+    font-family: 'Lato', sans-serif;
+}
+
+.profile {
+    margin: 0 auto;
+    background-color: #3d3640;
+    color: white;
+    display: flex;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    border-radius: 15px;
+}
+
+.image {
+    background: url(http://www.gravatar.com/avatar/49f02c2d35c0d92120d6298dccba0ac7?s=250);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e3e3e3;
+    height: 250px;
+    width: 250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.info .name {
+    font-weight: 800;
+    color: #e8917c;
+    margin-top: 5px;
+}
+
+.section {
+    flex-grow: 1;
+}
+
+.section b {
+    color: #e8917c;
+}
+
+.links {
+    margin-bottom: 5px;
+}
+
+.profile .links a {
+    color: white;
+    font-size: 1.5em;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.profile .links a:hover {
+    color: #e8917c;
+}
+
+.links .subtitle {
+    color: #e8917c;
+    margin-right: 15px;
+}
+
+.wip {
+    margin-top: 25px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) {
+    .profile {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .name {
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .image {
+        border-radius: 15px;
+    }
+    .links {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .profile {
+        margin-top: 25px;
+        width: 90vw;
+    }
+    .info {
+        padding-left: 15px;
+    }
+    .image {
+        border-radius: 15px 0px 0px 15px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .profile {
+        width: 60vw;
+    }
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

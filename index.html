@@ -3,79 +3,35 @@
 <head>
     <title>Stuart Douglas</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
     <script src="https://kit.fontawesome.com/217d740ec6.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="app">
-        <div class="navigation">
-            <div class="nav-title">
-                {{navigation.title}}
-            </div>
-            <ul class="nav-items">
-                <li class="nav-item" v-for="link in navigation.links">
-                    <a v-bind:href="link.link">{{link.title}}</a>
-                </li>
-            </ul>
-        </div>
-        <div id="profile" class="profile">
-            <h1>Profile</h1>
-            <h2 class="name">
-                {{profile.name}}
-            </h2>
-            <div class="description">
-                {{profile.description}}
-            </div>
-        </div>
 
-        <div id="projects" class="projects">
-            <h1>Projects</h1>
-            <div class="project" v-for="project in projects">
-                <h2 class="title">
-                    {{project.title}}
-                </h2>
-                <div class="description">
-                    {{project.description}}
-                </div>
-                <div class="images">
-                    <img class v-for="image in project.images" :src="image"/>
-                </div>
-            </div>
-        </div>
+    <div class="profile">
+        <div class="image"></div>
+        <div class="info">
+            <h1 class="name">Stuart Douglas</h1>
+            <div class="section">
+                <b>Current focus:</b>
+                <p>Java, Javascript developer</p>
 
-        <div id="contact" class="contact">
-            <h1>Contact me</h1>
+                <b>Current employment:</b>
+                <p>NCR, Spring Framework and Angular</p>
+            </div>
             <div class="links">
-                <div class="link" v-for="link in contact.links">
-                 <i :class="link.icon"></i><a v-bind:href="link.url">{{link.title}}</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="jobs" class="jobs">
-            <h1>Job History</h1>
-            <div class="job" v-for="job in jobs">
-                <h2 class="title">
-                    {{job.title}}
-                </h2>
-                <div class="current" v-if="job.current">Current Job</div>
-                <div class="time">
-                    {{job.time}}
-                </div>
-                <div class="description">
-                    {{job.description}}
-                </div>
-                <ul class="languages">
-                    <li v-for="language in job.languages">{{language}}</li>
-                </ul>
+                <b class="subtitle">Links:</b>
+                <a href="https://github.com/stuartjdouglas" class="fab fa-github"></a>
+                <a href="https://www.linkedin.com/in/stuartjdouglas/" class="fab fa-linkedin-in"></a>
             </div>
         </div>
 
     </div>
 
-    <script src="./app.js"></script>
-
+    <div class="wip"> Site work in progress</div>
 </body>
 
 </html>
