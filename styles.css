@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #e3e3e3;
+    background-color: #faf4f4;
     animation-name: fadeIn;
     animation-duration: 1s;
 }
@@ -49,14 +49,16 @@ header {
     }
 }
 @media (min-width: 480px) {
+    .navigation-links {
+        align-self: center;
+    }
     .navigation-links a {
-        color: black;
         text-decoration: none;
         display: inline-block;
     }
     
     .navigation-link {
-        margin-left: 5px;
+        margin-left: 15px;
     }
     
     .navigation-link:after {
@@ -91,5 +93,19 @@ header {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222831;
+    }
+
+    * {
+        color: #faf4f4;
+    }
+
+    .navigation-link:after {
+        border-bottom: 1px solid #faf4f4;
     }
 }
