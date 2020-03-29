@@ -2,36 +2,46 @@
 
 <head>
     <title>Stuart Douglas</title>
+
+    <!-- Development import -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Production import -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
+
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./home.css" />
     <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
     <script src="https://kit.fontawesome.com/217d740ec6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 
 <body>
-
-    <div class="profile">
-        <div class="image"></div>
-        <div class="info">
-            <h1 class="name">Stuart Douglas</h1>
-            <div class="section">
-                <b>Current focus:</b>
-                <p>Java, Javascript developer</p>
-
-                <b>Current employment:</b>
-                <p>NCR, Spring Framework and Angular</p>
+    <div class="app" id="app">
+        <header class="navigation">
+            <div class="title">
+                Stuart Douglas
             </div>
-            <div class="links">
-                <b class="subtitle">Links:</b>
-                <a href="https://github.com/stuartjdouglas" class="fab fa-github"></a>
-                <a href="https://www.linkedin.com/in/stuartjdouglas/" class="fab fa-linkedin-in"></a>
+            <div class="navigation-links" v-bind:class="{ open: mobileMenuOpen }">
+                <router-link class="navigation-link" v-for="route in routes" :key="route.path" :to="route.path"
+                    v-if="route.path !== '*'" v-on:click.native="mobileMenuOpen = false">{{route.title}}
+                </router-link>
             </div>
-        </div>
+            <div class="mobile-navigation-menu" v-on:click="mobileMenuOpen = !mobileMenuOpen">
+                <i class="" v-bind:class="{ 'fas fa-bars': !mobileMenuOpen, 'fas fa-times': mobileMenuOpen}"></i>
 
+            </div>
+        </header>
+
+        <router-view></router-view>
     </div>
-
-    <div class="wip"> Site work in progress</div>
 </body>
+<script src=" ./main.js"></script>
 
 </html>
