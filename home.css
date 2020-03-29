@@ -1,0 +1,99 @@
+
+
+.home .profile {
+    margin: 0 auto;
+    background-color: #3d3640;
+    color: white;
+    display: flex;
+    border-radius: 15px;
+}
+
+.home .image {
+    background: url(http://www.gravatar.com/avatar/49f02c2d35c0d92120d6298dccba0ac7?s=250);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e3e3e3;
+    height: 250px;
+    width: 250px;
+}
+
+.home .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.home .info p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.home .info .name {
+    font-weight: 800;
+    color: #e8917c;
+    margin-top: 5px;
+}
+
+.home .section {
+    margin-top: 25px;
+    flex-grow: 1;
+}
+
+.home .section b {
+    color: #e8917c;
+}
+
+.home .links {
+    margin-bottom: 25px;
+}
+
+.home .profile .links a {
+    color: white;
+    font-size: 1.5em;
+    /* padding-right: 5px; */
+    text-decoration: none;
+}
+
+.home .profile .links a:hover {
+    color: #e8917c;
+}
+
+.home .links .subtitle {
+    color: #e8917c;
+    margin-right: 15px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .home .profile {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .home .name {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        font-size: 8vw;
+    }
+    .home .image {
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (min-width: 480px) {
+    .profile {
+        margin-top: 25px;
+        width: 80vw;
+    }
+    .info {
+        padding-left: 15px;
+    }
+    .image {
+        border-radius: 15px 0px 0px 15px;
+    }
+}
